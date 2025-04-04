@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atul Lohia - Web Designer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(circle at top left, #0f0c29, #302b63, #24243e);
+      color: #ffffff;
+      scroll-behavior: smooth;
+    }
+    header {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #00f7ff;
+      text-shadow: 0 0 10px #00f7ff;
+    }
+    header p {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+    section {
+      padding: 4rem 2rem;
+    }
+    h2 {
+      color: #00ffd5;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 8px #00ffd5;
+    }
+    .services ul, .projects ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    li {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+      transition: 0.3s ease;
+    }
+    li:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+    }
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      margin: auto;
+    }
+    .contact input, .contact textarea {
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border: none;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+    }
+    .contact button {
+      background: #00f7ff;
+      color: #000;
+      padding: 1rem;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .contact button:hover {
+      background: #00ffd5;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #999;
+      background: rgba(255,255,255,0.05);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Atul Lohia</h1>
+    <p>Futuristic Web Designer | 3+ Years Experience | Figma to Code Specialist</p>
+  </header>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>I’m Atul Lohia, a passionate web designer from Himachal Pradesh with over 3 years of experience turning Figma designs into fully responsive websites. I specialize in HTML, CSS, JS, and love creating futuristic UI with clean code and animations.</p>
+  </section>
+
+  <section class="services">
+    <h2>Services</h2>
+    <ul>
+      <li>UI/UX Design</li>
+      <li>Figma to HTML Conversion</li>
+      <li>Responsive Web Design</li>
+      <li>Landing Page Development</li>
+    </ul>
+  </section>
+
+  <section class="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <h3>Project Nebula</h3>
+        <p>A futuristic landing page built with advanced CSS animations and mobile-first design.</p>
+      </li>
+      <li>
+        <h3>CyberKart</h3>
+        <p>An eCommerce UI mockup coded from Figma, optimized for speed and SEO.</p>
+      </li>
+      <li>
+        <h3>Spacefolio</h3>
+        <p>My experimental animated portfolio — mixing 3D vibes with glassmorphism UI trends.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Atul Lohia. All rights reserved.
+  </footer>
+</body>
+</html>
